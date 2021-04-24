@@ -69,6 +69,8 @@ header{
 }
 
 .btn-right{
+    display: flex;
+    justify-content: start;
     position: absolute;
     top: 0;
     right: 0;
@@ -79,12 +81,18 @@ header{
     width: 60px;
     height: 70px;
     box-shadow: none;
-    opacity: 0.8;
-    
+    font-size:0;
 }
 .btn-right:hover{
     width: 200px;
+    font-size: 18px;
     transition: all 0.7s ease-in;
+}
+.mafieicon{
+    margin-left: 8px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
     
 }
 .btn-left{
@@ -98,7 +106,6 @@ header{
     width: 60px;
     height: 70px;
     box-shadow: none;
-    opacity: 0.8;
 }
 .btn-left:hover{
     width: 200px;
@@ -214,12 +221,18 @@ header{
     }
     .btn-right{
         width: 40px;
+        font-size: 0px;
     }
     .btn-right:hover{
         width: 100px;
+        font-size: 11px;
     }
     .btnwall{
         top: 60px;
+    }
+    .mafieicon{
+        width: 30px;
+        height: 30px;
     }
     html,body{
         background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
