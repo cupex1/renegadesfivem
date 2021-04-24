@@ -34,30 +34,13 @@ header{
     height: 150px;
 }
 
-.scrislogo {
-    width: 300px;
-    margin-left: 30px;
+.btnwall{
+    position: relative;
+    top: 150px;
 }
-
-.discordm {
-    margin-right: 80px;
-    width: 100px;
-    height: 100px;
-}
-
-.container{
-    position: relative; 
-}
-.centru{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.btn-grad {
+.btn-style{
     background-image: linear-gradient(to bottom right, #fbd858 20%, #af293d 90%);
     margin-top: 10px;
-    padding: 15px 45px;
     font-size: 25px;
     font-family: 'Russo One', sans-serif;
     text-align: center;
@@ -79,7 +62,7 @@ header{
     z-index: 1000;
 }
 
-.btn-grad:hover {
+.btn-style:hover {
     background-position: right center;
     color: #fff;
     box-shadow: 0 0 50px white;
@@ -87,9 +70,62 @@ header{
     border-color: white;
 }
 
+.btn-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    border-radius: 25px 0 0 25px;
+    border-right: 0;
+    width: 60px;
+    height: 70px;
+}
+.btn-right:hover{
+    width: 200px;
+    transition: all 0.7s ease-in;
+    
+}
+.btn-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0 !important;
+    border-radius: 0 25px 25px 0 !important;
+    border-left: 0;
+    width: 60px;
+    height: 70px;
+}
+.btn-left:hover{
+    width: 200px;
+    transition: all 0.7s ease-in;
+    
+}
+.scrislogo {
+    width: 300px;
+    margin-left: 30px;
+}
+
+.discordm {
+    margin-right: 80px;
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    position: relative; 
+}
+.centru{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .butoanejos{
     display: flex;
     justify-content: center;
+    width: 330px;
+    height: 84px;
 }
 
 .primulbuton , .aldoileabuton{
@@ -108,7 +144,7 @@ header{
     
 }
 
-.btn-grad:hover .regulations {
+.btn-style:hover .regulations {
     transition: all 0.5s ease-in-out;
     top: -75px;
 }
@@ -121,7 +157,7 @@ header{
     z-index: -1;
 }
 
-.btn-grad:hover .bagmoney {
+.btn-style:hover .bagmoney {
     transition: all 0.5s ease-in-out;
     top: -75px;
 }
@@ -154,6 +190,12 @@ header{
         width:45px;
         margin-top: 63px;
         top: -50px;
+    }
+    .btn-left{
+        
+    }
+    .btn-right{
+        
     }
     html,body{
         background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
