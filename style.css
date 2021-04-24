@@ -12,7 +12,9 @@ html,body{
     -o-background-size: cover;
     background-size: cover;
 }
-
+a{
+    text-decoration: none;
+}
 header{
     visibility: hidden;
     height: 30px;
@@ -57,9 +59,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     z-index: 1000;
 }
-
+.btnwall{
+    position: relative;
+    top: 150px;
+}
 .btn-style:hover {
     background-position: right center;
     color: #fff;
@@ -95,6 +101,7 @@ header{
     height: 50px;
     
 }
+
 .btn-left{
     position: absolute;
     top: 0;
@@ -160,7 +167,6 @@ header{
     background-color: white;
     position: absolute;
     z-index: -1;
-    
 }
 
 .btn-style:hover .regulations {
