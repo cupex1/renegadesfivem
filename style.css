@@ -74,9 +74,13 @@ header{
     right: 0;
     margin-right: 0;
     border-radius: 25px 0 0 25px;
-    border-right: 0;
+    border: 2px solid;
+    border-right:0;
     width: 60px;
     height: 70px;
+    box-shadow: none;
+    opacity: 0.8;
+    
 }
 .btn-right:hover{
     width: 200px;
@@ -87,11 +91,14 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 0 !important;
-    border-radius: 0 25px 25px 0 !important;
+    margin-left: 0;
+    border-radius: 0 25px 25px 0;
+    border: 2px solid;
     border-left: 0;
     width: 60px;
     height: 70px;
+    box-shadow: none;
+    opacity: 0.8;
 }
 .btn-left:hover{
     width: 200px;
