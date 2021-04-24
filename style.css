@@ -1,150 +1,159 @@
-html,
-body {
-  height: 100%;
-  background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+html,body{
+    background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
     center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-body {
-  margin: auto 0;
-  font-family: 'Russo One', sans-serif;
-  width: 100%;
-}
-.separator {
-  visibility: hidden;
-  height: 30px;
-}
-.zone {
-  color: #fff;
-  font-size: 2em;
+header{
+    visibility: hidden;
+    height: 30px;
 }
 
-.black {
-  background-color: rgba(251, 216, 88, 0.5);
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar{
+    position: sticky;
+    top: 0px;
+    background-color: rgba(251, 216, 88, 0.3);
+    z-index: 100000;
 }
 
 .main-nav {
-  display: flex;
-  list-style: none;
-  font-size: 0.7em;
-  margin: 0;
-  align-items: center;
-  height: 150px;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 150px;
 }
 
 .scrislogo {
-  width: 300px;
-  margin-left: 30px;
+    width: 300px;
+    margin-left: 30px;
 }
 
-.discordlogo {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  margin-right: 80px;
-}
 .discordm {
-  width: 100px;
-  height: 100px;
-}
-.push {
-  margin-left: auto;
+    margin-right: 80px;
+    width: 100px;
+    height: 100px;
 }
 
-.container {
-  display: grid;
-  justify-content: center;
+.container{
+    position: relative; 
+    height: 10000px;
 }
-
-.primulbuton {
-  position: relative;
-  z-index: 10;
-}
-.aldoileabuton{
-    position: relative;
-    z-index: 10;
+.centru{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .btn-grad {
-  background-image: linear-gradient(to bottom right, #fbd858 20%, #af293d 90%);
-}
-.btn-grad {
-  margin-top: 10px;
-  padding: 15px 45px;
-  font-family: 'Russo One', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: rgb(50, 33, 69);
-  box-shadow: 0 0 30px rgb(190, 35, 123);
-  border-radius: 25px;
-  width: 330px;
-  margin-right: 15px;
-  margin-left: 15px;
-  border-color: rgb(50, 33, 69);
-  border-width: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    background-image: linear-gradient(to bottom right, #fbd858 20%, #af293d 90%);
+    margin-top: 10px;
+    padding: 15px 45px;
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(50, 33, 69);
+    box-shadow: 0 0 30px rgb(190, 35, 123);
+    border-radius: 25px;
+    width: 330px;
+    height: 84px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-color: rgb(50, 33, 69);
+    border-width: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .btn-grad:hover {
-  background-position: right center;
-  color: #fff;
-  box-shadow: 0 0 50px white;
-  text-decoration: none;
-  border-color: white;
+    background-position: right center;
+    color: #fff;
+    box-shadow: 0 0 50px white;
+    text-decoration: none;
+    border-color: white;
 }
 
-.btn-grad:hover .regulations {
-  transition: all 0.5s ease-in-out;
-  top: -75px;
+.butoanejos{
+    display: flex;
+    justify-content: center;
+}
+
+.primulbuton , .aldoileabuton{
+    position: relative;
+    z-index: 10;
 }
 
 .regulations {
-  margin-top: 10px;
-  transition: all 0.5s ease-in-out;
-  width: 33%;
-  top: 0px;
-  background-color: white;
-  position: absolute;
-  z-index: -1;
+    margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+    top: 0px;
+    width: 120px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    
 }
-.btn-grad:hover .bagmoney {
+
+.btn-grad:hover .regulations {
     transition: all 0.5s ease-in-out;
     top: -75px;
-  }
+}
+
 .bagmoney {
     margin-top: 10px;
     transition: all 0.5s ease-in-out;
     top: 0px;
     position: absolute;
     z-index: -1;
-  }
-.pozalogo {
-  justify-self: center;
-  grid-column-start: span 2;
 }
-.gaura {
-  height: 1000px;
+
+.btn-grad:hover .bagmoney {
+    transition: all 0.5s ease-in-out;
+    top: -75px;
 }
-.footer {
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(193, 62, 60, 0.5);
+
+@media screen and (max-width:767px){
+    .scrislogo{
+        width:180px;
+        margin-left: 15px;
+    }
+    .discordm{
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+    }
+    .pozalogo{
+        width: 250px;
+        height: 250px;
+    }
+    .btn-grad{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .regulations{
+        width:30px;
+        margin-top: 65px;
+        top: -50px;
+    }
+    .bagmoney{
+        width:45px;
+        margin-top: 63px;
+        top: -50px;
+    }
 }

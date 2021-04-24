@@ -2,90 +2,83 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Renegades</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Renegades</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="bg-warning py-2 separator"></div>
-  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark zone black">
-    <div class="collapse navbar-collapse" id="main_nav">
-      <ul class="main-nav">
-        <li>
-          <a class="scrislogo" href="index.html"><img src="./logos/pozascrislogo.png" alt="" /></a>
-        </li>
-        <li class="push">
-          <a class="discordlogo" href="https://discord.gg/PmxVmcJGr2" target="_blank"><img src="./logos/discord2.png"
-              alt="" class="discordm"/></a>
-        </li>
-      </ul>
-    </div>
-  </nav>  
-  <!-- <nav class="zone black sticky">
+    <header>
+
+    </header>
+    <nav id="navbar_top" class="navbar">
+        <div>
             <ul class="main-nav">
-               <li><a href="index.html"><img class="scrislogo" src="./logos/pozascrislogo.png" alt=""></a></li>
-               <li class="push"><a href="https://discord.gg/PmxVmcJGr2" target="_blank"><img class="discordlogo" src="./logos/discord-black-icon-1.png" alt=""></a></li>
+                <li>
+                    <a href="index.html"><img class="scrislogo" src="./logos/pozascrislogo.png" alt="" /></a>
+                </li>
+                <li>
+                    <a class="discordlogo" href="https://discord.gg/PmxVmcJGr2" target="_blank"><img
+                            src="./logos/discord2.png" alt="" class="discordm" /></a>
+                </li>
             </ul>
-          </nav> -->
-  <div class="container zone">
-    <img class="pozalogo" src="./logos/logo_500x500.png" alt="" />
+        </div>
+    </nav>
+    <main>
+        <div></div>
+        <div class="container">
+            <div class="centru">
+                <img class="pozalogo" src="./logos/logo_500x500.png" alt="" />
+                <div class="butoanejos">
+                    <div class="primulbuton">
+                        <button class="btn-grad"> <img class="regulations" src="./logos/regulations.svg" alt="">
+                            REGULAMENT</button>
+                    </div>
+                    <div class="aldoileabuton">
+                        <button class="btn-grad"> <img class="bagmoney"
+                                src="./logos/SeekPng.com_raining-money-png_35993.png" alt=""> DONATII</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </main>
+    <footer>
 
-    <div class="primulbuton">
-      
-      <button class="btn-grad"> <img class="regulations" src="./logos/regulations.svg" alt=""> REGULAMENT</button>
-      
-    </div>
-    <div class="aldoileabuton">
-      <button class="btn-grad"> <img class="bagmoney" src="./logos/SeekPng.com_raining-money-png_35993.png" alt=""> DONATII</button>
-    </div>
-  </div>
-    <div class="gaura"></div>
-  <div>
-    <footer class="footer">Footer</footer>
-  </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener('scroll', function () {
+                // if (window.scrollY > 30) {
+                //     document.getElementById('navbar_top').classList.add('fixed-top')
+                //     // add padding top to show content behind navbar
+                //     navbar_height = document.querySelector('.navbar').offsetHeight
+                //     document.body.style.paddingTop = navbar_height + 'px'
+                // } else {
+                //     document.getElementById('navbar_top').classList.remove('fixed-top')
+                //     // remove padding top from body
+                //     document.body.style.paddingTop = '0'
+                // }
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 30) {
-          document.getElementById('navbar_top').classList.add('fixed-top')
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('.navbar').offsetHeight
-          document.body.style.paddingTop = navbar_height + 'px'
-        } else {
-          document.getElementById('navbar_top').classList.remove('fixed-top')
-          // remove padding top from body
-          document.body.style.paddingTop = '0'
-        }
+                if (window.scrollY > 30) {
+                    const navbar = document.querySelector('#navbar_top')
 
-        if (window.scrollY > 30) {
-          const navbar = document.querySelector('#navbar_top')
+                    navbar.style.backgroundColor = 'rgba(251,216,88,.5)'
 
-          navbar.style.backgroundColor = 'rgba(251,216,88,.5)'
+                } else {
+                    const navbar = document.querySelector('#navbar_top')
 
-          // const discord = document.querySelector('.discordlogo')
+                    navbar.style.backgroundColor = 'rgba(251,216,88,.3)'
 
-          // discord.src = '/logos/discord1.png'
-        } else {
-          const navbar = document.querySelector('#navbar_top')
-
-          navbar.style.backgroundColor = 'rgba(251,216,88,.3)'
-
-          // const discord = document.querySelector('.discordlogo')
-
-          // discord.src = '/logos/discord2.png'
-        }
-      })
-    })
-  </script>
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
