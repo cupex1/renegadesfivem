@@ -47,7 +47,6 @@ header{
 
 .container{
     position: relative; 
-    height: 10000px;
 }
 .centru{
     display: flex;
