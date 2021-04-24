@@ -52,8 +52,6 @@ header{
     border-radius: 25px;
     width: 330px;
     height: 84px;
-    margin-right: 15px;
-    margin-left: 15px;
     border-color: rgb(50, 33, 69);
     border-width: 3px;
     display: flex;
@@ -133,6 +131,13 @@ header{
     z-index: 10;
 }
 
+.primulbuton{
+    right: 15px;
+}
+.aldoileabuton{
+    left: 15px
+}
+
 .regulations {
     margin-top: 10px;
     transition: all 0.5s ease-in-out;
@@ -176,10 +181,13 @@ header{
         width: 250px;
         height: 250px;
     }
-    .btn-grad{
-        width: 30px;
-        height: 30px;
-        font-size: 10px;
+    .btn-style{
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .butoanejos{
+        width: 300px;
     }
     .regulations{
         width:30px;
@@ -192,10 +200,19 @@ header{
         top: -50px;
     }
     .btn-left{
-        
+        width: 40px;
+    }
+    .btn-left:hover{
+        width: 100px;
     }
     .btn-right{
-        
+        width: 40px;
+    }
+    .btn-right:hover{
+        width: 100px;
+    }
+    .btnwall{
+        top: 60px;
     }
     html,body{
         background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
