@@ -156,4 +156,12 @@ header{
         margin-top: 63px;
         top: -50px;
     }
+    html,body{
+        background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
+    center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
 }
