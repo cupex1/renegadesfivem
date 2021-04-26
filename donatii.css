@@ -119,9 +119,6 @@ li{
         width: 200px;
         height: 35px;
     }
-    .linie{
-        width: 100%;
-    }
     .textbox{
         width: 70%;
     }
@@ -129,7 +126,7 @@ li{
         font-size: 18px;
     }
     html,body{
-        background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
+    background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center
     center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
