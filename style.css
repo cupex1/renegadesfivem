@@ -62,10 +62,7 @@ header{
     cursor: pointer;
     z-index: 1000;
 }
-.btnwall{
-    position: relative;
-    top: 150px;
-}
+
 .btn-style:hover {
     background-position: right center;
     color: #fff;
