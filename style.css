@@ -235,7 +235,7 @@ header{
     }
     .btn-left{
         width: 40px;
-        padding-right: 2px;
+        font-size: 0;
     }
     .btn-left:hover{
         width: 100px;
