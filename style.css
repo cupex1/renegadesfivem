@@ -37,10 +37,13 @@ header{
 }
 
 .btnwall{
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 150px;
-}
-.btn-style{
+  }
+
+  .btn-style{
     background-image: linear-gradient(to bottom right, #fbd858 20%, #af293d 90%);
     margin-top: 10px;
     font-size: 25px;
@@ -61,45 +64,15 @@ header{
     align-items: center;
     cursor: pointer;
     z-index: 1000;
-}
-
-.btn-style:hover {
+  }
+  .btn-style:hover {
     background-position: right center;
     color: #fff;
     box-shadow: 0 0 50px white;
     text-decoration: none;
     border-color: white;
-}
-
-.btn-right{
-    display: flex;
-    justify-content: start;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 0;
-    border-radius: 25px 0 0 25px;
-    border: 2px solid;
-    border-right:0;
-    width: 60px;
-    height: 70px;
-    box-shadow: none;
-    font-size:0;
-}
-.btn-right:hover{
-    width: 200px;
-    font-size: 18px;
-    transition: all 0.7s ease-in;
-}
-.mafieicon{
-    margin-left: 8px;
-    align-self: center;
-    width: 50px;
-    height: 50px;
-    
-}
-
-.btn-left{
+  }
+  .btn-left{
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -113,22 +86,119 @@ header{
     height: 70px;
     box-shadow: none;
     font-size: 0px;
-}
-
-.btn-left:hover{
+  }
+  
+  .btn-left:hover{
     width: 200px;
     font-size: 16px;
-    transition: all 0.7s ease-in;
+    transition: all 0.3s ease-in;
     
-}
-
-.smurdpoliceicon{
+  }
+  .btn-right{
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    border-radius: 25px 0 0 25px;
+    border: 2px solid;
+    border-right:0;
+    width: 60px;
+    height: 70px;
+    box-shadow: none;
+    font-size:0;
+  }
+  .btn-right:hover{
+    width: 200px;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+    
+  }
+  .mafieicon{
+    margin-left: 8px;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    
+  }
+  .smurdpoliceicon{
     margin-right: 6px;
     margin-bottom: 5px;
     align-self: center;
     width: 50px;
     height: 50px; 
-}
+  }
+
+  .sidenavleft {
+    height: fit-content;
+    width: 0; 
+    position: absolute; 
+    z-index: 1; 
+    top: 80px;
+    background-color: rgb(50, 33, 69);
+    overflow-x: hidden; 
+    padding-top: 40px;
+    padding-bottom: 30px; 
+    transition: 0.5s; 
+    border-radius: 0 25px 25px 0;
+    box-shadow: 0 0 50px white;
+  }
+
+  .sidenavright {
+    height: fit-content; 
+    width: 0; 
+    position: absolute; 
+    z-index: 1; 
+    overflow-x: hidden; 
+    top: 80px;
+    background-color: rgb(50, 33, 69); 
+    right: 0;
+    padding-top: 40px;
+    padding-bottom: 30px; 
+    transition: 0.5s; 
+    border-radius: 25px 0 0 25px;
+    box-shadow: 0 0 50px white;
+  
+  }
+  
+  .sidenavleft a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: all 0.5s ease-in;
+  }
+  .sidenavright a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: all 0.5s ease-in;
+  }
+  
+  .sidenavleft a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  .sidenavleft .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .sidenavright .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    
+  }
 
 .scrislogo {
     width: 300px;
@@ -257,6 +327,30 @@ header{
         width: 30px;
         height: 30px;
         
+    }
+
+    .sidenavleft {
+        height: fit-content;
+        top: 60px;
+    }
+    .sidenavleft  a {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    .sidenavright{
+        height: fit-content;
+        top:60px;
+    }
+    .sidenavright  a {
+        font-size: 10px;
+    }
+    .sidenavleft .closebtn{
+        font-size: 25px;
+        right: 10px;
+    }
+    .sidenavright .closebtn{
+        font-size: 25px;
+        right: 10px;
     }
     html,body{
         background: url(./logos/los-santos-gta-v-city-view-92.jpg) no-repeat center

@@ -31,27 +31,43 @@
     </nav>
     <main>
         <div class="btnwall">
-            <button class="btn-left btn-style">
-                FACTIUNE SMURD-POLITIE
-                <img class="smurdpoliceicon" src="./logos/icon2.png" alt="">
-            </button>
-            <button class="btn-right btn-style"><img class="mafieicon" src="./logos/2099791.png"alt="">             
-                FACTIUNE MAFII
-            </button>
+            <div class="btn-navleft">
+                <button class="btn-left btn-style" onclick="openNavleft()">FACTIUNE SMURD-POLITIE<img
+                        class="smurdpoliceicon" src="./logos/icon2.png" alt=""></button>
+
+                <div id="mySidenavleft" class="sidenavleft">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNavleft()">&times;</a>
+                    <a href="#">Politie</a>
+                    <a href="#">SMURD</a>
+                </div>
+            </div>
+                <button id="buttonright" class="btn-right btn-style" onclick="openNavright()"><img class="mafieicon"
+                        src="./logos/2099791.png" alt="">
+                        FACTIUNE MAFII
+                </button>
+            <div class="btn-navright">
+                <div id="mySidenavright" class="sidenavright">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNavright()">&times;</a>
+                    <a href="#">BRIGADA</a>
+                    <a href="#">CAMORA</a>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="centru">
                 <img class="pozalogo" src="./logos/logo_500x500.png" alt="" />
                 <div class="butoanejos">
                     <div class="primulbuton">
-                        <a href="regulament.html"><button class="btn-style"><img class="regulations" src="./logos/regulations.svg"alt="">
-                            REGULAMENT
-                        </button></a>
+                        <a href="regulament.html"><button class="btn-style"><img class="regulations"
+                                    src="./logos/regulations.svg" alt="">
+                                REGULAMENT
+                            </button></a>
                     </div>
                     <div class="aldoileabuton">
-                       <a href="donatii.html"><button class="btn-style"> <img class="bagmoney" src="./logos/SeekPng.com_raining-money-png_35993.png" alt="">
-                            DONATII
-                        </button></a>
+                        <a href="donatii.html"><button class="btn-style"> <img class="bagmoney"
+                                    src="./logos/SeekPng.com_raining-money-png_35993.png" alt="">
+                                DONATII
+                            </button></a>
                     </div>
                 </div>
             </div>
@@ -87,6 +103,38 @@
                 }
             })
         })
+    </script>
+    <script>
+        function openNavleft() {
+            document.getElementById("mySidenavleft").style.width = "200px";
+            if (window.innerWidth < 767) {
+                
+                document.getElementById("mySidenavleft").style.width = "100px";
+  }
+        }
+
+        function closeNavleft() {
+            document.getElementById("mySidenavleft").style.width = "0";
+        }
+
+        function openNavright() {
+            document.getElementById("mySidenavright").style.width = "200px";
+            // document.getElementById("buttonright").style.width = "200px"
+            // document.getElementById("buttonright").style.fontSize = "18px"
+            // document.getElementById("buttonright").style.color = "#FFFFFF"
+            if (window.innerWidth < 767) {
+                
+                document.getElementById("mySidenavright").style.width = "100px";
+            }
+        }
+
+        function closeNavright() {
+            document.getElementById("mySidenavright").style.width = "0";
+            // document.getElementById("buttonright").style.width = "60px"
+            // document.getElementById("buttonright").style.fontSize = "0"
+        }
+
+
     </script>
 </body>
 
